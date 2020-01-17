@@ -1,4 +1,61 @@
-.App {
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+  display:flex;
+  height:100vh;
+  background-color: #0D3043;
+  justify-content:center;
+
+}
+
+.landing {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  height:95%;
+}
+
+.avatar {
+  align-self:center;
+  margin-right:30px;
+}
+
+.bracket {
+  align-self:center;
+}
+
+.quote {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:93%;
+  margin-left:-20px; 
+}
+
+
+h1 {
+  font-family: Avenir Next;
+  font-weight:600;
+  font-size:3.8em;
+  color: #8B957B;
+  margin-top:0;
+  margin-bottom:-1em;
+}
+
+p {
+  font-family: Avenir Next;
+  font-weight:300;
+  font-size:3em;
+  letter-spacing:-2px;
+  color: #8B957B;
+  margin-bottom:-1.2em;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +93,4 @@
     transform: rotate(360deg);
   }
 }
+ */
