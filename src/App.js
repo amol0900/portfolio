@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-/* import Curly from './curly.png';
-import Avatar from './avatar.png'; */
+import Home from './components/home';
 import Main from './components/main';
+import About from './components/about';
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 class App extends Component {
   render() {
     return (
-<div><Main /></div>
+      <Router>
+
+        <Main />
+      
+      </Router>
     );
   }
 }

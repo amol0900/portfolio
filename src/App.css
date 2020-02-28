@@ -5,36 +5,100 @@ html, body {
 
 #main {
   display:flex;
-  height:100vh;
   background-color: #0D3043;
-  justify-content:center;
+  /* justify-content:center; */
+  flex-direction:column;
+  height:100vh;
+  /* overflow:hidden; */
+}
 
+/* .fig {width:2%;
+padding:20px;} */
+
+/* Menu */
+
+header {
+  display:flex;
+  background-color: #0D3043;
+  justify-content:flex-end;
+  margin-top:25px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding:0;
+}
+
+li {
+  display:inline;
+  padding: 5px 35px;
+  font-family: Avenir Next;
+  font-weight:600;
+  font-size:1em;
+  color: #8B957B;
+}
+
+a {
+  font-family: Avenir Next;
+  font-weight:600;
+  font-size:0.9em;
+  color: #8B957B;
+  text-decoration:none;
+}
+
+/* End menu */
+
+/* Home wrapper */
+
+#wrapper {
+  display:flex;
+  justify-content:start;
+  align-items:center;
+  height:80%;
+  margin-left:70px;
+}
+
+/* About wrapper */
+
+#wrapper2 {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:75%;
 }
 
 .landing {
   display:flex;
   flex-direction:row;
   justify-content: center;
-  height:95%;
+  height:80%;
 }
 
 .avatar {
   align-self:center;
   margin-right:30px;
+  transition: transform .5s, filter 1s ease-in-out;
+  /* filter: grayscale(0); */
+  cursor:pointer;
+}
+
+.avatar:hover {
+  filter: opacity(70%);
+  /* transform: scale(1.1); */
+
+} 
+
+.avatar2 {
+  width:15%;
+  height:15%;
+  min-width:150px !important;
+  margin-top:3%;
 }
 
 .bracket {
   align-self:center;
 }
-
-.quote {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  height:93%;
-  margin-left:-20px; 
-}
-
 
 h1 {
   font-family: Avenir Next;
@@ -43,54 +107,260 @@ h1 {
   color: #8B957B;
   margin-top:0;
   margin-bottom:-1em;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
 
-p {
+.about{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+width:68%;
+flex-wrap:wrap;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+
+h2 {
+  font-family: Avenir Next;
+  font-weight:300;
+  font-size:3.2em;
+  color: #8B957B;
+  letter-spacing:-2px;
+  margin-bottom:0px;
+  text-align:right;
+}
+
+.title2 {
+  font-family: Avenir Next;
+  font-weight:700;
+  font-size:2.2em;
+  color: #8B957B;
+  letter-spacing:-1px;
+  line-height:1.1em;
+  margin-top:0px;
+  text-align:right;
+}
+
+.paragraph {
+  font-family: Avenir Next;
+  font-weight:500;
+  font-size:1.3em;
+  line-height:1.6em;
+  color: #8B957B;
+  width:45%;
+  margin-top:6%;
+}
+
+.link {margin: 0 auto;}
+
+.contact {width:40px;
+  margin:0 auto;
+  margin-bottom:10px;
+  cursor:pointer;}
+
+
+.contactMe {  font-family: Avenir Next;
+  font-weight:500;
+  font-size:1em;
+color: #8B957B;
+font-style:italic;
+margin:0 auto;}
+
+.quote {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:94%;
+  margin-left:-20px; 
+}
+
+.name {
   font-family: Avenir Next;
   font-weight:300;
   font-size:3em;
   letter-spacing:-2px;
   color: #8B957B;
   margin-bottom:-1.2em;
+  animation: fadein 2s;
+  animation-delay: 1.5s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -moz-animation-delay:1.5s;
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -webkit-animation-delay:1.5s;
+  -o-animation: fadein 2s; /* Opera */
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.title {
+  font-family: Avenir Next;
+  font-weight:300;
+  font-size:3em;
+  letter-spacing:-2px;
+  color: #8B957B;
+  margin-bottom:-1.2em;
+  animation: fadein 2s;
+  animation-delay: 3s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -moz-animation-delay:3s;
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -webkit-animation-delay:3s;
+  -o-animation: fadein 2s; /* Opera */
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 556px) {
+  #wrapper {margin-left:0px; justify-content:center; height:100vh; overflow:hidden;}
+  h1 {font-size:2.7em;}
+  .name {font-size:2em;}
+  .title {font-size:1em;}
+  .avatar {display:none;}
+}
+
+@media (max-width: 768px) {
+  h1 {font-size:3.5em;}
+  .name {font-size:2.7em;}
+  .title {font-size:2.7em;}
+  .avatar {display:none;}
+   h2 {font-size:2.8em;}
+  .title2 {font-size:1.9em;}
+}
+/* 
+@media (max-width: 752px) {
+  h1 {font-size:3.5em;}
+  .name {font-size:2.7em;}
+  .title {font-size:2.7em;}
+  .avatar {display:none;}
+   h2 {font-size:2.7em !important;}
+  .title2 {font-size:1.8em!important;}
+}
+
+@media (max-width: 723px) {
+  h1 {font-size:3.5em;}
+  .name {font-size:2.7em;}
+  .title {font-size:2.7em;}
+  .avatar {display:none;}
+   h2 {font-size:2.5em !important;}
+  .title2 {font-size:1.6em!important;}
+}
+
+@media (max-width: 665px) {
+  h1 {font-size:3.5em;}
+  .name {font-size:2.7em;}
+  .title {font-size:2.7em;}
+  .avatar {display:none;}
+   h2 {font-size:2.4em !important;}
+  .title2 {font-size:1.5em!important;}
+}
+
+@media (max-width: 635px) {
+  h1 {font-size:3.5em;}
+  .name {font-size:2.7em;}
+  .title {font-size:2.7em;}
+  .avatar {display:none;}
+   h2 {font-size:2.3em !important;}
+  .title2 {font-size:1.4em!important;}
+}
+
+@media (max-width: 869px) {
+  h1 {font-size:3.5em;}
+  .name {font-size:2.7em;}
+  .title {font-size:2.7em;}
+  .avatar {display:none;}
+   h2 {font-size:2.9em;}
+  .title2 {font-size:2em;}
+} */
+
+
+@media (max-width: 1340px) {
+  h1 {font-size:3.5em;}
+  .name {font-size:2.7em;}
+  .title {font-size:2.7em;}
+  .avatar {display:none;}
+  .about {justify-content:center; width:40%;}
+  .avatar2 {margin-right:20px;}
+  .paragraph {width:100%;}
+}
+
+/* iPhone X */
+@media (max-width: 375px) {
+  h1 {font-size:2.5em;}
+  .name {font-size:1.7em;}
+  .title {font-size:1.7em;}
+  .avatar {display:none;}
+  .bracket {width:70px;}
+  h2 {font-size:2.4em;}
+  .title2 {font-size:1.5em; text-align:left;}
+  .paragraph {width:80%;}
+}
+
+/* iPhone 5 */
+@media (max-width: 320px) {
+  h1 {font-size:1.5em;}
+  .name {font-size:0.7em;}
+  .title {font-size:0.7em;}
+  .avatar {display:none;}
+  .bracket {width:70px;}
+    h2 {font-size:1em;text-align:left;}
+  .title2 {font-size:0.6em; text-align:left;}
+}
+
+/* iPhone 6/7/8plus */
+@media (max-width: 414px) {
+  h1 {font-size:2.5em;}
+  .name {font-size:1.7em;}
+  .title {font-size:1.7em;}
+  .avatar {display:none;}
+  .bracket {width:70px;}
+  h2 {font-size:2em;text-align:left;}
+  .title2 {font-size:1.9em; text-align:left;}
+  .avatar2 {margin:auto;}
+  header {display:none;}
+  .about{width:90%; justify-content:center;}
+  .paragraph {width:80%;}
+  
 }
 
 
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
- */
