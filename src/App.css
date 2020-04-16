@@ -119,11 +119,14 @@ flex-direction:row;
 justify-content:space-between;
 width:68%;
 flex-wrap:wrap;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+/*   animation: fadein 2s;
+  -moz-animation: fadein 2s; 
+  -webkit-animation: fadein 2s; 
+  -o-animation: fadein 2s;  */
+ 
 }
+
+
 
 
 h2 {
@@ -147,6 +150,7 @@ h2 {
   text-align:right;
 }
 
+
 .paragraph {
   font-family: Avenir Next;
   font-weight:500;
@@ -157,11 +161,17 @@ h2 {
   margin-top:6%;
 }
 
-.link {margin: 0 auto;}
+
+#wrapper3 {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+}
 
 .contact {width:40px;
-  margin:0 auto;
-  margin-bottom:10px;
+/*   margin:0 auto;
+  margin-bottom:10px; */
   cursor:pointer;}
 
 
@@ -170,7 +180,7 @@ h2 {
   font-size:1em;
 color: #8B957B;
 font-style:italic;
-margin:0 auto;}
+}
 
 .quote {
   display:flex;
@@ -198,6 +208,28 @@ margin:0 auto;}
   opacity: 0;
   animation-fill-mode: forwards;
 }
+
+
+#ContactSection {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+#GitSection {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+.git {
+width:50px;
+margin-bottom:0px;
+color:#8B957B;}
+
+
 
 .title {
   font-family: Avenir Next;

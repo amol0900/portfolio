@@ -5,7 +5,7 @@ import About from './about';
 import Projects from './projects';
 
 const Main = () => (
-    <Switch>
+    <Switch location={location}>
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/" component={Home} />
