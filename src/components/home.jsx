@@ -1,23 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react';
 import Curly from './images/curly.png';
-import Avatar from './images/avatar.png';
-import Fig from './images/fig.png';
-/* import { Link } from 'react-router-dom' */
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import About from './about';
 
 
-export class Home extends Component {
+export default class Home extends React.Component {
     render() {
         return (
-            <div id="main">
+            <div className="page-container page">
                 {/* <img src={Fig} alt="fig" className="fig" /> */}
                 <header>
                     <nav>
                         <ul>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>
-                            {/* <li><Link to="/projects">Projects</Link></li> */}
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </nav>
                 </header>
@@ -42,6 +39,5 @@ export class Home extends Component {
 }
 
 
-export default Home;
 
 

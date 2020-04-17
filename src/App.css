@@ -1,15 +1,16 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #0D3043;
 }
 
-#main {
+.page-container {
   display:flex;
   background-color: #0D3043;
-  /* justify-content:center; */
+
   flex-direction:column;
   height:100vh;
-  /* overflow:hidden; */
+  
 }
 
 /* .fig {width:2%;
@@ -128,7 +129,6 @@ flex-wrap:wrap;
 
 
 
-
 h2 {
   font-family: Avenir Next;
   font-weight:300;
@@ -137,6 +137,30 @@ h2 {
   letter-spacing:-2px;
   margin-bottom:0px;
   text-align:right;
+}
+
+
+h3 {
+  font-family: Avenir Next;
+  font-weight:600;
+  font-size:6em;
+  color: #8B957B;
+  margin:0;
+}
+
+.mail {
+ 
+  font-family: Avenir Next;
+  font-weight:600;
+  font-style:italic;
+  font-size:1.2em;
+  color: #8B957B;
+  margin-top:0px;
+  position:relative;
+  left:130px;
+  top:-28px;
+margin-bottom:0px;
+
 }
 
 .title2 {
@@ -164,15 +188,19 @@ h2 {
 
 #wrapper3 {
   display:flex;
-  flex-direction:row;
-  justify-content:space-around;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  height:100vh;
   
 }
 
-.contact {width:40px;
+.contact {width:auto;
 /*   margin:0 auto;
   margin-bottom:10px; */
-  cursor:pointer;}
+  cursor:pointer;
+border-bottom: 5px solid #8B957B;
+padding:0px;}
 
 
 .contactMe {  font-family: Avenir Next;
@@ -210,25 +238,17 @@ font-style:italic;
 }
 
 
-#ContactSection {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-}
-
-#GitSection {
+/* #GitSection {
   display:flex;
   justify-content:center;
   flex-direction:column;
   align-items:center;
-}
+} */
 
-.git {
+/* .git {
 width:50px;
 margin-bottom:0px;
-color:#8B957B;}
-
+color:#8B957B;} */
 
 
 .title {

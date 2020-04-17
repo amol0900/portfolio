@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import Avatar from './images/avatar.png';
-import Curly from './images/curly.png';
-import Mail from './images/mail.png';
 import { ReactComponent as MySvgComponent } from './images/github-brands.svg';
 
 var spanStyle = {
@@ -10,17 +8,16 @@ var spanStyle = {
     fontWeight: 500
 };
 
-export class about extends Component {
+export default class about extends React.Component {
     render() {
         return (
-                <div id="main">
+            <div className="page-container page">
                     {/* <img src={Fig} alt="fig" className="fig" /> */}
                     <header>
                         <nav>
                             <ul>
                                 <li><Link to="/">Home</Link></li>
                                 <li><Link to="/about">About</Link></li>
-                                <li><Link to="/projects">Projects</Link></li>
                             </ul>
                         </nav>
                     </header>
@@ -33,20 +30,18 @@ export class about extends Component {
                         <p class="paragraph">I'm a Front-end developer with a passion for design, based in Stockholm, Sweden. Languages I speak are HTML, CSS & JavaScript.</p>
                     </section>
                 </div>
-                <div id="wrapper3">
+                
                 {/* <section id="ContactSection">
                 <a href="mailto: amanda.olsson@student.kyh.se" className="link"><img src={Mail} alt="contact" className="contact" /></a>
                     <p class="contactMe">Say hello.</p>
                     </section> */}
 
-                    <section id="GitSection">
+{/*                     <section id="GitSection">
                         <MySvgComponent className="git" />
-                    <p class="contactMe">Check out my Github</p></section>
-                </div>
+                    <p class="contactMe">Check out my Github</p></section> */}
+                
 
             </div>
         )
     }
 }
-
-export default about
