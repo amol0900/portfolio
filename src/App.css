@@ -1,12 +1,12 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #0D3043;
+    background-color: #c0d9fc;
 }
 
 .page-container {
   display:flex;
-  background-color: #0D3043;
+  background-color: #c0d9fc;
 
   flex-direction:column;
   height:100vh;
@@ -20,7 +20,7 @@ padding:20px;} */
 
 header {
   display:flex;
-  background-color: #0D3043;
+  background-color: #c0d9fc;
   justify-content:flex-end;
   margin-top:25px;
 }
@@ -44,7 +44,7 @@ a {
   font-family: Avenir Next;
   font-weight:600;
   font-size:0.9em;
-  color: #8B957B;
+  color: #2F2F2F;
   text-decoration:none;
 }
 
@@ -99,13 +99,14 @@ a {
 
 .bracket {
   align-self:center;
+  color: #e87f5a;
 }
 
 h1 {
   font-family: Avenir Next;
   font-weight:600;
   font-size:3.8em;
-  color: #8B957B;
+  color: #2F2F2F;
   margin-top:0;
   margin-bottom:-1em;
   animation: fadein 2s;
@@ -133,7 +134,7 @@ h2 {
   font-family: Avenir Next;
   font-weight:300;
   font-size:3.2em;
-  color: #8B957B;
+  color: #2F2F2F;
   letter-spacing:-2px;
   margin-bottom:0px;
   text-align:right;
@@ -144,7 +145,7 @@ h3 {
   font-family: Avenir Next;
   font-weight:600;
   font-size:6em;
-  color: #8B957B;
+  color: #2F2F2F;
   margin:0;
 }
 
@@ -154,7 +155,7 @@ h3 {
   font-weight:600;
   font-style:italic;
   font-size:1.2em;
-  color: #8B957B;
+  color: #2F2F2F;
   margin-top:0px;
   position:relative;
   left:130px;
@@ -167,7 +168,7 @@ margin-bottom:0px;
   font-family: Avenir Next;
   font-weight:700;
   font-size:2.2em;
-  color: #8B957B;
+  color: #2F2F2F;
   letter-spacing:-1px;
   line-height:1.1em;
   margin-top:0px;
@@ -180,7 +181,7 @@ margin-bottom:0px;
   font-weight:500;
   font-size:1.3em;
   line-height:1.6em;
-  color: #8B957B;
+  color: #2F2F2F;
   width:45%;
   margin-top:6%;
 }
@@ -199,14 +200,14 @@ margin-bottom:0px;
 /*   margin:0 auto;
   margin-bottom:10px; */
   cursor:pointer;
-border-bottom: 5px solid #8B957B;
+border-bottom: 5px solid #2F2F2F;
 padding:0px;}
 
 
 .contactMe {  font-family: Avenir Next;
   font-weight:500;
   font-size:1em;
-color: #8B957B;
+color: #2F2F2F;
 font-style:italic;
 }
 
@@ -223,7 +224,8 @@ font-style:italic;
   font-weight:300;
   font-size:3em;
   letter-spacing:-2px;
-  color: #8B957B;
+  color: #2F2F2F;
+
   margin-bottom:-1.2em;
   animation: fadein 2s;
   animation-delay: 1.5s;
@@ -256,7 +258,7 @@ color:#8B957B;} */
   font-weight:300;
   font-size:3em;
   letter-spacing:-2px;
-  color: #8B957B;
+  color: #2F2F2F;
   margin-bottom:-1.2em;
   animation: fadein 2s;
   animation-delay: 3s;
