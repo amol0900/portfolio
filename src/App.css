@@ -2,14 +2,28 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #c0d9fc;
+
 }
 
 .page-container {
   display:flex;
   background-color: #c0d9fc;
-
   flex-direction:column;
-  height:100vh;
+  height:90vh;
+
+  
+}
+
+.page-container:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom: 500px solid #ABCCFB;
+  border-left: 800px solid transparent;
+  
   
 }
 
@@ -22,8 +36,12 @@ header {
   display:flex;
   background-color: #c0d9fc;
   justify-content:flex-end;
-  margin-top:25px;
+  margin-right:10px;
+  margin-top:5px;
 }
+
+
+
 
 
 ul {
@@ -48,6 +66,16 @@ a {
   text-decoration:none;
 }
 
+/* a:hover {
+  font-family: Avenir Next;
+  font-weight:600;
+  font-size:0.9em;
+  color: #2F2F2F;
+  text-decoration:none;
+  border-bottom: 2px solid#e87f5a;
+} */
+
+
 /* End menu */
 
 /* Home wrapper */
@@ -56,7 +84,7 @@ a {
   display:flex;
   justify-content:start;
   align-items:center;
-  height:80%;
+  height:65%;
   margin-left:70px;
 }
 
@@ -72,35 +100,30 @@ a {
 .landing {
   display:flex;
   flex-direction:row;
-  justify-content: center;
-  height:80%;
+  justify-content: flex-start;
+  height:100%;
+  align-items:flex-start;
 }
 
 .avatar {
+  width:16%;
   align-self:center;
-  margin-right:30px;
-  transition: transform .5s, filter 1s ease-in-out;
+  margin-right:45px;
+  margin-top:20px;
+  /* transition: transform .5s, filter 1s ease-in-out; */
   /* filter: grayscale(0); */
   cursor:pointer;
 }
 
-.avatar:hover {
-  filter: opacity(70%);
-  /* transform: scale(1.1); */
 
-} 
-
-.avatar2 {
+/* .avatar2 {
   width:15%;
   height:15%;
   min-width:150px !important;
   margin-top:3%;
-}
+} */
 
-.bracket {
-  align-self:center;
-  color: #e87f5a;
-}
+
 
 h1 {
   font-family: Avenir Next;
@@ -140,29 +163,26 @@ h2 {
   text-align:right;
 }
 
-
 h3 {
+  font-family: Avenir Next;
+  font-weight:500;
+  font-size:2em;
+  color: #2F2F2F;
+}
+
+
+/* h3 {
   font-family: Avenir Next;
   font-weight:600;
   font-size:6em;
   color: #2F2F2F;
   margin:0;
-}
+  cursor:pointer;
 
-.mail {
- 
-  font-family: Avenir Next;
-  font-weight:600;
-  font-style:italic;
-  font-size:1.2em;
-  color: #2F2F2F;
-  margin-top:0px;
-  position:relative;
-  left:130px;
-  top:-28px;
-margin-bottom:0px;
+} */
 
-}
+
+
 
 .title2 {
   font-family: Avenir Next;
@@ -189,19 +209,28 @@ margin-bottom:0px;
 
 #wrapper3 {
   display:flex;
-  justify-content:center;
-  flex-direction:column;
+  justify-content:space-around;
+  flex-direction:row;
   align-items:center;
-  height:100vh;
+  height:65%;
+  z-index:1;
   
 }
 
-.contact {width:auto;
-/*   margin:0 auto;
-  margin-bottom:10px; */
-  cursor:pointer;
-border-bottom: 5px solid #2F2F2F;
-padding:0px;}
+.Git {
+  display:flex;
+  flex-direction:row-reverse;
+  margin-left:-250px;
+ 
+}
+
+.gitlogo {
+  width:80px;
+  margin-right:10px;
+}
+
+
+
 
 
 .contactMe {  font-family: Avenir Next;
@@ -239,6 +268,21 @@ font-style:italic;
   animation-fill-mode: forwards;
 }
 
+.bottom {
+  display:inline-block;
+  position:relative;
+}
+
+.bottom:after {
+  position: absolute;
+  content: '';
+  border-bottom: 3px solid #e87f5a;
+  width: 100%;
+  transform: translateX(-50%);
+  bottom: 5px;
+  left: 50%;
+}
+
 
 /* #GitSection {
   display:flex;
@@ -259,6 +303,7 @@ color:#8B957B;} */
   font-size:3em;
   letter-spacing:-2px;
   color: #2F2F2F;
+  margin-top:50px;
   margin-bottom:-1.2em;
   animation: fadein 2s;
   animation-delay: 3s;
@@ -305,116 +350,36 @@ color:#8B957B;} */
     }
 }
 
-@media (max-width: 556px) {
-  #wrapper {margin-left:0px; justify-content:center; height:100vh; overflow:hidden;}
-  h1 {font-size:2.7em;}
+@media (max-width: 999px) {
+ /*  h1 {font-size:2.7em;}
   .name {font-size:2em;}
-  .title {font-size:1em;}
+  .title {font-size:1em;} */
+  .landing {z-index:1;}
   .avatar {display:none;}
+  #wrapper3 {
+  flex-direction:column;
+  justify-content:center;
+;}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 583px) {
   h1 {font-size:3.5em;}
-  .name {font-size:2.7em;}
-  .title {font-size:2.7em;}
-  .avatar {display:none;}
-   h2 {font-size:2.8em;}
-  .title2 {font-size:1.9em;}
-}
-/* 
-@media (max-width: 752px) {
-  h1 {font-size:3.5em;}
-  .name {font-size:2.7em;}
-  .title {font-size:2.7em;}
-  .avatar {display:none;}
-   h2 {font-size:2.7em !important;}
-  .title2 {font-size:1.8em!important;}
+  .name {font-size:2.5em;}
+  .title {font-size:2em;} 
+
 }
 
-@media (max-width: 723px) {
-  h1 {font-size:3.5em;}
-  .name {font-size:2.7em;}
-  .title {font-size:2.7em;}
-  .avatar {display:none;}
-   h2 {font-size:2.5em !important;}
-  .title2 {font-size:1.6em!important;}
+@media (max-width: 390px) {
+  h1 {font-size:3em;}
+  .name {font-size:2em;}
+  .title {font-size:1.7em;} 
+
 }
 
-@media (max-width: 665px) {
-  h1 {font-size:3.5em;}
-  .name {font-size:2.7em;}
-  .title {font-size:2.7em;}
-  .avatar {display:none;}
-   h2 {font-size:2.4em !important;}
-  .title2 {font-size:1.5em!important;}
-}
-
-@media (max-width: 635px) {
-  h1 {font-size:3.5em;}
-  .name {font-size:2.7em;}
-  .title {font-size:2.7em;}
-  .avatar {display:none;}
-   h2 {font-size:2.3em !important;}
-  .title2 {font-size:1.4em!important;}
-}
-
-@media (max-width: 869px) {
-  h1 {font-size:3.5em;}
-  .name {font-size:2.7em;}
-  .title {font-size:2.7em;}
-  .avatar {display:none;}
-   h2 {font-size:2.9em;}
-  .title2 {font-size:2em;}
-} */
-
-
-@media (max-width: 1340px) {
-  h1 {font-size:3.5em;}
-  .name {font-size:2.7em;}
-  .title {font-size:2.7em;}
-  .avatar {display:none;}
-  .about {justify-content:center; width:40%;}
-  .avatar2 {margin-right:20px;}
-  .paragraph {width:100%;}
-}
-
-/* iPhone X */
-@media (max-width: 375px) {
-  h1 {font-size:2.5em;}
-  .name {font-size:1.7em;}
-  .title {font-size:1.7em;}
-  .avatar {display:none;}
-  .bracket {width:70px;}
-  h2 {font-size:2.4em;}
-  .title2 {font-size:1.5em; text-align:left;}
-  .paragraph {width:80%;}
-}
-
-/* iPhone 5 */
 @media (max-width: 320px) {
-  h1 {font-size:1.5em;}
-  .name {font-size:0.7em;}
-  .title {font-size:0.7em;}
-  .avatar {display:none;}
-  .bracket {width:70px;}
-    h2 {font-size:1em;text-align:left;}
-  .title2 {font-size:0.6em; text-align:left;}
-}
-
-/* iPhone 6/7/8plus */
-@media (max-width: 414px) {
-  h1 {font-size:2.5em;}
-  .name {font-size:1.7em;}
-  .title {font-size:1.7em;}
-  .avatar {display:none;}
-  .bracket {width:70px;}
-  h2 {font-size:2em;text-align:left;}
-  .title2 {font-size:1.9em; text-align:left;}
-  .avatar2 {margin:auto;}
-  header {display:none;}
-  .about{width:90%; justify-content:center;}
-  .paragraph {width:80%;}
+  h1 {font-size:2.8em;}
+  .name {font-size:1.8em;}
+  .title {font-size:1.5em; margin-top:35px;} 
+ 
   
 }
-
-
