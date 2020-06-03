@@ -9,8 +9,7 @@ html, body {
   display:flex;
   background-color: #c0d9fc;
   flex-direction:column;
-  height:90vh;
-
+  height:100vh;
   
 }
 
@@ -35,12 +34,12 @@ padding:20px;} */
 header {
   display:flex;
   background-color: #c0d9fc;
-  justify-content:flex-end;
-  margin-right:10px;
-  margin-top:5px;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  margin-top:10px;
+ 
 }
-
-
 
 
 
@@ -66,29 +65,15 @@ a {
   text-decoration:none;
 }
 
-/* a:hover {
-  font-family: Avenir Next;
-  font-weight:600;
-  font-size:0.9em;
-  color: #2F2F2F;
-  text-decoration:none;
-  border-bottom: 2px solid#e87f5a;
-} */
-
-
-/* End menu */
-
-/* Home wrapper */
 
 #wrapper {
   display:flex;
   justify-content:start;
   align-items:center;
-  height:65%;
+  height:50%;
   margin-left:70px;
 }
 
-/* About wrapper */
 
 #wrapper2 {
   display:flex;
@@ -110,18 +95,10 @@ a {
   align-self:center;
   margin-right:45px;
   margin-top:20px;
-  /* transition: transform .5s, filter 1s ease-in-out; */
-  /* filter: grayscale(0); */
+
   cursor:pointer;
 }
 
-
-/* .avatar2 {
-  width:15%;
-  height:15%;
-  min-width:150px !important;
-  margin-top:3%;
-} */
 
 
 
@@ -136,19 +113,6 @@ h1 {
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
-}
-
-.about{
-display:flex;
-flex-direction:row;
-justify-content:space-between;
-width:68%;
-flex-wrap:wrap;
-/*   animation: fadein 2s;
-  -moz-animation: fadein 2s; 
-  -webkit-animation: fadein 2s; 
-  -o-animation: fadein 2s;  */
- 
 }
 
 
@@ -171,42 +135,6 @@ h3 {
 }
 
 
-/* h3 {
-  font-family: Avenir Next;
-  font-weight:600;
-  font-size:6em;
-  color: #2F2F2F;
-  margin:0;
-  cursor:pointer;
-
-} */
-
-
-
-
-.title2 {
-  font-family: Avenir Next;
-  font-weight:700;
-  font-size:2.2em;
-  color: #2F2F2F;
-  letter-spacing:-1px;
-  line-height:1.1em;
-  margin-top:0px;
-  text-align:right;
-}
-
-
-.paragraph {
-  font-family: Avenir Next;
-  font-weight:500;
-  font-size:1.3em;
-  line-height:1.6em;
-  color: #2F2F2F;
-  width:45%;
-  margin-top:6%;
-}
-
-
 #wrapper3 {
   display:flex;
   justify-content:space-around;
@@ -217,12 +145,6 @@ h3 {
   
 }
 
-.Git {
-  display:flex;
-  flex-direction:row-reverse;
-  margin-left:-250px;
- 
-}
 
 .gitlogo {
   width:80px;
@@ -230,15 +152,6 @@ h3 {
 }
 
 
-
-
-
-.contactMe {  font-family: Avenir Next;
-  font-weight:500;
-  font-size:1em;
-color: #2F2F2F;
-font-style:italic;
-}
 
 .quote {
   display:flex;
@@ -282,19 +195,6 @@ font-style:italic;
   bottom: 5px;
   left: 50%;
 }
-
-
-/* #GitSection {
-  display:flex;
-  justify-content:center;
-  flex-direction:column;
-  align-items:center;
-} */
-
-/* .git {
-width:50px;
-margin-bottom:0px;
-color:#8B957B;} */
 
 
 .title {

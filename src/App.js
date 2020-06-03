@@ -9,20 +9,22 @@ import './components/pageTransitions/slideTransition.scss';
 import styled from 'styled-components';
 
 const Weather = styled.div`
-background-color: #ABCCFB;
+/* background-color: #ABCCFB; */
 
 display:flex;
+flex-direction:row;
 justify-content:center;
 margin-bottom:0;
-
 
 
 & p {
   /* color:white; */
   font-family:Avenir Next;
-  font-size:0.9em;
+  font-size:1.5em;
+  font-weight:600;
   font-style:italic;
   margin-right:30px;
+  line-height:-100px;
 }
 `;
 
@@ -33,24 +35,8 @@ class App extends Component {
     super(props);
     this.state = {
       prevDepth: this.getPathDepth(this.props.location),
-      data: {
-        weather: [{
-          id: 300,
-          main: "drizzle",
-          description: "light intensity drizzle",
-          icon: "09d"
-        }]
-      }
+
     };
-  }
-
-  componentDidMount() {
-    console.log("CDM ran")
-    fetch(API)
-      .then(response => response.json())
-      .then(data => this.setState({ weather: (Math.round(data.main.temp)), icon: data.weather[0].icon }));
-
-
   }
 
 
@@ -66,17 +52,12 @@ class App extends Component {
 
   render() {
     const { location } = this.props;
-    const { weather, icon } = this.state;
-    const renderWeatherIcon = this.state.data.weather.map(item => {
-      return <img src={`http://openweathermap.org/img/w/${item.icon}.png`} />;
-    });
     const currentKey = location.pathname.split("/")[1] || "/";
     const timeout = { enter: 800, exit: 400 };
 
 
     return (
       <TransitionGroup>
-        <Weather><p>The temperature right now is {weather}°C <img src={`http://openweathermap.org/img/w/${icon}.png`} /></p></Weather>
         <CSSTransition key={currentKey}
           timeout={timeout}
           classNames="pageSlider"
@@ -85,7 +66,6 @@ class App extends Component {
           <div className={this.getPathDepth(location) - this.state.prevDepth >= 0 ? "left" : "right"}>
             <Switch location={location}>
               <Route path="/" exact component={Home} />
-              <Route path="/about" exact component={About} />
               <Route path="/contact" exact component={Contact} />
             </Switch>
           </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { pulse } from 'react-animations';
 import GitLogo from './images/github-brands.svg';
+import Weather from './weather';
 
 
 
@@ -78,30 +79,33 @@ const MyH3 = styled.h3`
 
 
 export default class contact extends React.Component {
-    render() {
-        return (
-            <div className="page-container page">
-                <header>
-                    <nav>
-                        <ul>
-                            <li><Link to="/">Home</Link></li>
-                            {/* <li><Link to="/about">About</Link></li> */}
-                            <li><Link to="/contact">Contact</Link></li>
-                        </ul>
-                    </nav>
-                </header>
-                <div id="wrapper3">
-                    <Contact>
-                        <a href="mailto: amanda.olsson@student.kyh.se">Say hello.</a>
-                    </Contact>
-                    <Git>
-                        <a href="https://github.com/amol0900"><MyH3>Check out my Github</MyH3></a><img src={GitLogo} alt="github logotype" className="gitlogo" />
-                    </Git>
+  render() {
+    return (
+      <div className="page-container page">
+        <div className="headwrap" style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <header>
+            <nav>
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                {/* <li><Link to="/about">About</Link></li> */}
+                <li><Link to="/contact">Contact</Link></li>
+              </ul>
+            </nav>
+            <Weather />
+          </header>
+        </div>
+        <div id="wrapper3">
+          <Contact>
+            <a href="mailto: amanda.olsson@student.kyh.se">Say hello.</a>
+          </Contact>
+          <Git>
+            <a href="https://github.com/amol0900"><MyH3>Check out my Github</MyH3></a><img src={GitLogo} alt="github logotype" className="gitlogo" />
+          </Git>
 
-                </div>
-            </div>
-        )
-    }
+        </div>
+      </div >
+    )
+  }
 }
 
 

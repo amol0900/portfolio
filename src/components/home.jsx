@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import About from './about';
 import Avatar from './images/cc.png';
+import Weather from './weather';
 
 
 export default class Home extends React.Component {
@@ -9,16 +9,17 @@ export default class Home extends React.Component {
         return (
             <div className="page-container page">
                 {/* <img src={Fig} alt="fig" className="fig" /> */}
-                <header>
-                    <nav>
-                        <ul>
-                            <li><Link to="/">Home</Link></li>
-                            {/* <li><Link to="/about">About</Link></li> */}
-                            <li><Link to="/contact">Contact</Link></li>
-                        </ul>
-                    </nav>
-                </header>
-
+                <div className="headwrap" style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                    <header>
+                        <nav>
+                            <ul>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
+                            </ul>
+                        </nav>
+                        <Weather />
+                    </header>
+                </div>
                 <div id="wrapper">
                     <div className="landing">
                         <img src={Avatar} alt="portrait" className="avatar" />
