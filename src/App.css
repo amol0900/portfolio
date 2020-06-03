@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #c0d9fc;
+    overflow:hidden;
 
 }
 
@@ -68,7 +69,7 @@ a {
 
 #wrapper {
   display:flex;
-  justify-content:start;
+  justify-content:flex-start;
   align-items:center;
   height:50%;
   margin-left:70px;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './components/home.jsx';
-import About from './components/about.jsx';
 import Contact from './components/contact.jsx';
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
