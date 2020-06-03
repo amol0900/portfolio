@@ -11,12 +11,10 @@ export default class Home extends React.Component {
                 {/* <img src={Fig} alt="fig" className="fig" /> */}
                 <div className="headwrap" style={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <header>
-                        <nav>
-                            <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
-                            </ul>
-                        </nav>
+                        <ul>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
+                        </ul>
                         <Weather />
                     </header>
                 </div>

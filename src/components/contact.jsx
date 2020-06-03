@@ -5,27 +5,21 @@ import { pulse } from 'react-animations';
 import GitLogo from './images/github-brands.svg';
 import Weather from './weather';
 
-
-
 const pulseAnimation = keyframes`${pulse}`;
 
 const Contact = styled.div`
   width:auto;
-/*   margin:0 auto;
-  margin-bottom:10px; */
   cursor:pointer;
-  /* overflow:visible; */
+  padding:0px;
   
-padding:0px;
 
 &:hover {
     animation: 1s ${pulseAnimation};
     border-bottom:5px solid #e87f5a;
 }
 
-
 & a {
-    font-family: Avenir Next;
+  font-family: Avenir Next;
   font-weight:600;
   font-size:6em;
   color: #2F2F2F;
@@ -35,28 +29,26 @@ padding:0px;
 
   @media (max-width: 583px) {
   font-size:4em;
-  
+  }
 }
-}
-
 `;
 
 const Git = styled.div`
   display:flex;
   flex-direction:row-reverse;
-  margin-left:-250px;
+  /* margin-left:-250px; */
   cursor:pointer;
+
 
    @media (max-width: 999px) {
   margin-left:0px;
    }
   
   &:hover {
-    animation: 1s ${pulseAnimation};
-    
+    animation: 1s ${pulseAnimation};  
 }
   
-  `;
+`;
 
 const MyH3 = styled.h3`
   font-family: Avenir Next;
@@ -64,19 +56,16 @@ const MyH3 = styled.h3`
   font-size:2em;
   color: #2F2F2F;
 
-    @media (max-width: 583px) {
+  @media (max-width: 583px) {
   font-size:1.5em;
 
-  
 }
  
-  
   &:hover {
-          animation: 1s ${pulseAnimation};
+    animation: 1s ${pulseAnimation};
     border-bottom:3px solid #e87f5a;
   }
   `;
-
 
 export default class contact extends React.Component {
   render() {

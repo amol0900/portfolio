@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
+import { slideInRight } from 'react-animations';
+
 
 
 const Weather = styled.div`
