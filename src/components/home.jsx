@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Avatar from './images/cc.png';
+import Avatar from './images/portrait.svg';
 import Weather from './weather';
 
 

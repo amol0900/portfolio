@@ -19,8 +19,8 @@ html, body {
   position: absolute;
   right: 0;
   bottom: 0;
-  border-bottom: 500px solid #ABCCFB;
-  border-left: 800px solid transparent;
+  border-bottom: 400px solid #ABCCFB;
+  border-left: 700px solid transparent;
 }
 
 header {
@@ -67,7 +67,9 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   height: 100%;
+  width:100%;
   align-items: flex-start;
+  z-index:1;
 }
 
 .avatar {
