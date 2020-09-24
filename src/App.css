@@ -221,7 +221,7 @@ h3 {
 @media (max-width: 999px) {
   .landing {z-index: 1;}
   .avatar {display: none;}
-  #wrapper3 {flex-direction: column; justify-content: center;}
+  #wrapper3 {flex-direction: column;}
   .page-container:after {
     content: "";
     width: 0;
