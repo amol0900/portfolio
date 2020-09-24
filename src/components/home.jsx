@@ -22,8 +22,7 @@ export default class Home extends React.Component {
                 <div id="wrapper">
                     <div className="landing">
                         <img src={Avatar} alt="portrait" className="avatar" />
-                        {/* <img src={Curly} alt="bracket" className="bracket" /> */}
-
+    
                         <div className="quote"><h1>Hello there.</h1>
                             <p className="name">My name is <span className="bottom">Amanda.</span></p>
                             <p className="title">I'm a Front-end Developer.</p>

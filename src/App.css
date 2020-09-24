@@ -222,6 +222,16 @@ h3 {
   .landing {z-index: 1;}
   .avatar {display: none;}
   #wrapper3 {flex-direction: column; justify-content: center;}
+  .page-container:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 0px solid #ABCCFB;
+    border-left: 0px solid transparent;
+  }
 }
 
 @media (max-width: 583px) {
