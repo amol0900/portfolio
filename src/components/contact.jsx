@@ -35,13 +35,14 @@ const Contact = styled.div`
 
 const Git = styled.div`
   display:flex;
-  flex-direction:row-reverse;
+  flex-direction:row;
   /* margin-left:-250px; */
   cursor:pointer;
 
 
    @media (max-width: 999px) {
-  margin-left:0px;
+    flex-direction:column;
+    align-items:center;
    }
   
   &:hover {
@@ -71,7 +72,7 @@ export default class contact extends React.Component {
   render() {
     return (
       <div className="page-container page">
-        <div className="headwrap" style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <div className="headwrap">
           <header>
             <nav>
               <ul>
@@ -87,7 +88,8 @@ export default class contact extends React.Component {
             <a href="mailto: amanda.olsson@student.kyh.se">Say hello.</a>
           </Contact>
           <Git>
-            <a href="https://github.com/amol0900"><MyH3>Check out my Github</MyH3></a><img src={GitLogo} alt="github logotype" className="gitlogo" />
+          <img src={GitLogo} alt="github logotype" className="gitlogo" />
+            <a href="https://github.com/amol0900"><MyH3>Check out my Github</MyH3></a>
           </Git>
 
         </div>

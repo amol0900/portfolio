@@ -10,7 +10,7 @@ export default class Home extends React.Component {
             <div className="page-container page">
                 <noscript>You need to enable JavaScript to run this app.</noscript>
                 {/* <img src={Fig} alt="fig" className="fig" /> */}
-                <div className="headwrap" style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                <div className="headwrap">
                     <header>
                         <ul>
                             <li><Link to="/">Home</Link></li>

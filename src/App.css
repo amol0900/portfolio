@@ -23,6 +23,11 @@ html, body {
   border-left: 700px solid transparent;
 }
 
+.headwrap {
+  display:flex;
+  justify-content:flex-end;
+}
+
 header {
   display:flex;
   background-color: #c0d9fc;
@@ -221,17 +226,15 @@ h3 {
 @media (max-width: 999px) {
   .landing {z-index: 1;}
   .avatar {display: none;}
-  #wrapper3 {flex-direction: column;}
+  #wrapper {margin-left:50px;}
+  #wrapper3 {flex-direction: column; margin-bottom:auto; align-items:center; justify-content:space-evenly; height:55%;}
   .page-container:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-bottom: 0px solid #ABCCFB;
-    border-left: 0px solid transparent;
+  
+    border-bottom: 300px solid #ABCCFB;
+    border-left: 600px solid transparent;
   }
+  .headwrap {justify-content:space-around;}
+  header {flex-direction:row; justify-content:}
 }
 
 @media (max-width: 583px) {
